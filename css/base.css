@@ -6,7 +6,8 @@
 
 :root{
 
-    --color-blue: #2C3E50;
+    --color-dark-blue: #2C3E50;
+    --color-blue: #34495E;
     --color-light-blue: #2980B9;
     --color-background-white: #ECF0F1;
 
@@ -19,6 +20,8 @@
 
 
     --width: 1440px;
+    --width-menu: 540px;
+    --width-header: 900px;
     --width-sidebar: 440px;
     --width-main: 1000px;
     --height-header: 150px;

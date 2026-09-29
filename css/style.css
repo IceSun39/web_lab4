@@ -3,21 +3,25 @@
 
 body {
     margin: auto;
-    max-width: var(--width); /* Виправлено виклик змінної */
+    max-width: var(--width);
 }
 
 .container {
     width: var(--width);
+    margin: 0 auto;
+    position: relative;
     background-color: var(--color-background-white);
     color: black;
     font-family: var(--font-family);
     font-size: var(--font-size-p);
+    overflow: hidden;
 }
 
 .header {
-    width: var(--width-main);
+    width: var(--width-header);
     height: var(--height-header);
-    background-color: var(--color-blue);
+    background-color: var(--color-dark-blue);
+    font-size: 36px;
     color: white;
     padding: 20px var(--padding-left);
     box-sizing: border-box;
@@ -26,9 +30,9 @@ body {
 }
 
 .menu {
-    width: var(--width-sidebar);
+    width: var(--width-menu);
     height: var(--height-menu);
-    background-color: var(--color-light-blue);
+    background-color: var(--color-blue);
     padding: 20px;
     box-sizing: border-box;
     float: right;
@@ -38,28 +42,28 @@ body {
 .menu ul {
     display: flex;
     justify-content: center;
-    gap: 10px; 
+    gap: 10px;
     height: 100%;
-    align-items: center; 
+    align-items: center;
 }
 
 .menu ul li {
     display: inline-block;
-    padding: 0; 
+    padding: 0;
     line-height: 1.2;
     text-align: center;
 }
 
 .menu ul li a {
     color: white;
-    font-size: 18px; 
+    font-size: 22px;
 }
 
 .menu ul li a:hover {
     text-decoration: underline;
 }
 
-.portrait{
+.portrait {
     width: var(--img);
     float: left;
     padding-right: 20px;
@@ -67,49 +71,76 @@ body {
 
 .content {
     width: var(--width-main);
-    background-color: white; 
+    background-color: white;
     clear: left;
     float: left;
     padding: 30px var(--padding-left);
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .sidebar {
     width: var(--width-sidebar);
     background-color: var(--color-background-white);
-    float: right; 
+    float: right;
     clear: right;
     padding: 30px;
     box-sizing: border-box;
 }
 
-.footer {
-    height: var(--height-footer);
-    width: var(--width-sidebar);
+.sidebar button {
+    display: block;  
+    width: 100%;
     background-color: var(--color-blue);
     color: white;
-    clear: right; 
-    float: right;
-    box-sizing: border-box;
-    font-size: 20px;
-    padding: 20px var(--padding-left);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: var(--width-sidebar);
+    height: var(--height-footer);
+    background-color: var(--color-blue);
+    color: white;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 20px 30px;
+}
 
-h2,h3 {
+.footer h3 {
+    all: unset;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h2,
+h3 {
     color: var(--color-light-blue);
     margin-bottom: 15px;
     margin-top: 30px;
 }
+
 p {
     margin-bottom: 15px;
     line-height: 1.5;
 }
 
+.content {
+    padding-bottom: calc(var(--height-footer) + 40px);
+}
+
 .content ul {
-    list-style-type: disc; /* Тип маркера: чорний кружечок */
-    margin-left: 20px;     /* Додаємо відступ зліва, щоб точки не прилипали до краю екрана */
-    margin-bottom: 15px;   /* Відступ знизу після списку */
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
 }
 
 .content ul li {
