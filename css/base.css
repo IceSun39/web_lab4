@@ -1,32 +1,30 @@
-@font-face{
-    font-family: "Inter";
-    font-weight:  normal;
-    font-style: normal;
+@font-face {
+  font-family: "Inter";
+  font-weight: normal;
+  font-style: normal;
 }
 
-:root{
+:root {
+  --color-dark-blue: #2c3e50;
+  --color-blue: #34495e;
+  --color-light-blue: #2980b9;
+  --color-background-white: #ecf0f1;
 
-    --color-dark-blue: #2C3E50;
-    --color-blue: #34495E;
-    --color-light-blue: #2980B9;
-    --color-background-white: #ECF0F1;
+  --font-family: "Inter";
+  --font-size-h1: 36px;
+  --font-size-h2: 30px;
+  --font-size-p: 24px;
+  --font-size-sidebar: 24px;
+  --font-size-menu: 24px;
 
-    --font-family: "Inter";
-    --font-size-h1: 36px;
-    --font-size-h2: 30px;
-    --font-size-p: 24px;
-    --font-size-sidebar: 24px;
-    --font-size-menu: 24px;
-
-
-    --width: 1440px;
-    --width-menu: 540px;
-    --width-header: 900px;
-    --width-sidebar: 440px;
-    --width-main: 1000px;
-    --height-header: 150px;
-    --height-menu: 150px;
-    --height-footer: 150px;
-    --img: 281px;
-    --padding-left: 50px;
+  --width: 1440px;
+  --width-menu: 540px;
+  --width-header: 900px;
+  --width-sidebar: 440px;
+  --width-main: 1000px;
+  --height-header: 150px;
+  --height-menu: 150px;
+  --height-footer: 150px;
+  --img: 281px;
+  --padding-left: 50px;
 }

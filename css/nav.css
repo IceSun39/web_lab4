@@ -1,0 +1,33 @@
+nav {
+  width: var(--width-menu);
+  height: var(--height-menu);
+  background-color: var(--color-blue);
+  padding: 20px;
+  box-sizing: border-box;
+  float: right;
+  border-left: 2px solid #2980b9;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0;
+  line-height: 1.2;
+  text-align: center;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 22px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}

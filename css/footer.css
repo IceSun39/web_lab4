@@ -1,0 +1,19 @@
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: var(--width-sidebar);
+  height: var(--height-footer);
+  background-color: var(--color-blue);
+  color: white;
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 20px 30px;
+}
+
+footer h3 {
+  all: unset;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
