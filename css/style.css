@@ -1,25 +1,22 @@
 @import url(base.css);
 @import url(reset.css);
+@import url(header.css);
+@import url(nav.css);
+@import url(main.css);
 @import url(aside.css);
 @import url(footer.css);
-@import url(main.css);
-@import url(nav.css);
 
 body {
-  margin: auto;
-  max-width: var(--width);
-  width: var(--width);
-  margin: 0 auto;
-  position: relative;
+  max-width: var(--max-width);
+  margin-inline: auto;
   background-color: var(--color-background-white);
   color: black;
   font-family: var(--font-family);
   font-size: var(--font-size-p);
-  overflow: hidden;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: var(--font-size-h2);
 }
 
 h2,
@@ -34,3 +31,50 @@ p {
   line-height: 1.5;
 }
 
+body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+}
+
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+main {
+  grid-area: main;
+}
+aside {
+  grid-area: aside;
+}
+footer {
+  grid-area: footer;
+}
+
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    grid-template-areas:
+      "header nav"
+      "main   main"
+      "aside  footer";
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    grid-template-columns: minmax(0, 25fr) minmax(0, 11fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header nav"
+      "main   aside"
+      "main   footer";
+  }
+}

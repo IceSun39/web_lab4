@@ -1,30 +1,16 @@
-@font-face {
-  font-family: "Inter";
-  font-weight: normal;
-  font-style: normal;
-}
-
 :root {
   --color-dark-blue: #2c3e50;
   --color-blue: #34495e;
   --color-light-blue: #2980b9;
   --color-background-white: #ecf0f1;
 
-  --font-family: "Inter";
-  --font-size-h1: 36px;
-  --font-size-h2: 30px;
-  --font-size-p: 24px;
-  --font-size-sidebar: 24px;
-  --font-size-menu: 24px;
+  --font-family: "Inter", system-ui, sans-serif;
 
-  --width: 1440px;
-  --width-menu: 540px;
-  --width-header: 900px;
-  --width-sidebar: 440px;
-  --width-main: 1000px;
-  --height-header: 150px;
-  --height-menu: 150px;
-  --height-footer: 150px;
-  --img: 281px;
-  --padding-left: 50px;
+  --font-size-h1: clamp(1.5rem, 4vw, 2.25rem);
+  --font-size-h2: clamp(1.5rem, 3vw, 2rem);
+  --font-size-p: clamp(1rem, 0.6vw + 0.85rem, 1.5rem);
+  --font-size-menu: clamp(1rem, 1.5vw, 1.375rem);
+
+  --max-width: 90rem;
+  --padding-inline: clamp(1rem, 4vw, 3.125rem);
 }

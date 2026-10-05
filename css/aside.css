@@ -1,10 +1,6 @@
 aside {
-  width: var(--width-sidebar);
+  padding: 2rem 1.875rem;
   background-color: var(--color-background-white);
-  float: right;
-  clear: right;
-  padding: 30px;
-  box-sizing: border-box;
 }
 
 aside button {
