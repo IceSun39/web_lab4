@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Переконайся, що файли css лежать у папці css -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <title>Лабораторна робота №3</title>
   </head>
@@ -18,6 +19,10 @@
         <li><a href="#disciplines">Дисципліни</a></li>
         <li><a href="#schedule">Розклад</a></li>
         <li><a href="#publications">Публікації</a></li>
+        <li><a href="#projects">Проєкти</a></li>
+        <li><a href="#news">Новини</a></li>
+        <li><a href="#reviews">Відгуки</a></li>
+        <li><a href="#contact">Контакти</a></li>
       </ul>
     </nav>
 
@@ -176,6 +181,250 @@
           &mdash; С. 105-108.
         </li>
       </ol>
+
+      <!-- 1. Статистика та метрики -->
+      <section id="stats" class="stats" aria-labelledby="stats-title">
+        <h2 id="stats-title">Викладач у цифрах</h2>
+        <div class="stats-grid">
+          <article class="stat">
+            <p class="stat-value">120+</p>
+            <p class="stat-label">студентів щороку</p>
+          </article>
+          <article class="stat">
+            <p class="stat-value">8</p>
+            <p class="stat-label">років викладання</p>
+          </article>
+          <article class="stat">
+            <p class="stat-value">15</p>
+            <p class="stat-label">наукових публікацій</p>
+          </article>
+          <article class="stat">
+            <p class="stat-value">30</p>
+            <p class="stat-label">студентських проєктів</p>
+          </article>
+        </div>
+
+        <h3>Виконання лабораторних робіт</h3>
+        <ul class="progress-list">
+          <li>
+            <label for="p-oop">ООП (C++ та Java)</label>
+            <progress id="p-oop" max="100" value="85">85%</progress>
+            <span>85%</span>
+          </li>
+          <li>
+            <label for="p-web">Веб-розробка</label>
+            <progress id="p-web" max="100" value="70">70%</progress>
+            <span>70%</span>
+          </li>
+          <li>
+            <label for="p-db">Бази даних</label>
+            <progress id="p-db" max="100" value="55">55%</progress>
+            <span>55%</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 2. Галерея студентських проєктів -->
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Студентські проєкти</h2>
+        <div class="gallery-grid">
+          <figure class="gallery-card" tabindex="0">
+            <img src="images/projects/bot.svg" alt="Ілюстрація Telegram-бота" />
+            <figcaption>
+              <strong>Telegram-бот розкладу</strong>
+              <span>Python, aiogram</span>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card" tabindex="0">
+            <img src="images/projects/api.svg" alt="Ілюстрація REST API" />
+            <figcaption>
+              <strong>REST API бронювання</strong>
+              <span>FastAPI, PostgreSQL</span>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card" tabindex="0">
+            <img
+              src="images/projects/qt.svg"
+              alt="Ілюстрація десктопного застосунку"
+            />
+            <figcaption>
+              <strong>Менеджер завдань</strong>
+              <span>C++, Qt</span>
+            </figcaption>
+          </figure>
+          <figure class="gallery-card" tabindex="0">
+            <img src="images/projects/fx.svg" alt="Ілюстрація візуалізатора" />
+            <figcaption>
+              <strong>Візуалізатор алгоритмів</strong>
+              <span>Java, JavaFX</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 3. Новини -->
+      <section id="news" aria-labelledby="news-title">
+        <h2 id="news-title">Новини та анонси</h2>
+        <div class="news-grid">
+          <article class="news-card">
+            <p class="news-meta">
+              <time datetime="2026-09-15">15.09.2026</time>
+              <span class="news-category">Навчання</span>
+            </p>
+            <h3>Нові лабораторні з FastAPI</h3>
+            <p>
+              У новому семестрі студенти створюють власні REST API з
+              автотестами.
+            </p>
+            <ul class="tags">
+              <li>FastAPI</li>
+              <li>Git</li>
+            </ul>
+            <a class="btn" href="#news">Читати далі</a>
+          </article>
+          <article class="news-card">
+            <p class="news-meta">
+              <time datetime="2026-09-02">02.09.2026</time>
+              <span class="news-category">Наука</span>
+            </p>
+            <h3>Статтю прийнято до друку</h3>
+            <p>Опубліковано матеріали про викладання бекенд-фреймворків.</p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>Освіта</li>
+            </ul>
+            <a class="btn" href="#news">Читати далі</a>
+          </article>
+          <article class="news-card">
+            <p class="news-meta">
+              <time datetime="2026-08-20">20.08.2026</time>
+              <span class="news-category">Гурток</span>
+            </p>
+            <h3>Відкрито набір до IT-гуртка</h3>
+            <p>Запрошуємо студентів до роботи над реальними проєктами.</p>
+            <ul class="tags">
+              <li>Telegram</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <a class="btn" href="#contact">Читати далі</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4. Відгуки -->
+      <section id="reviews" aria-labelledby="reviews-title">
+        <h2 id="reviews-title">Відгуки студентів</h2>
+        <div class="reviews-grid">
+          <figure class="review">
+            <blockquote>
+              <p>
+                Зрозуміло пояснює складні теми й завжди дає практичні приклади.
+              </p>
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">ОК</span>
+              <span class="review-author">
+                <strong>Олена К.</strong>
+                <span>група КН-21</span>
+              </span>
+              <span class="rating" role="img" aria-label="Оцінка 5 з 5"
+                >★★★★★</span
+              >
+            </figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>
+              <p>
+                Проєктний підхід допоміг зібрати портфоліо ще під час навчання.
+              </p>
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">ДП</span>
+              <span class="review-author">
+                <strong>Денис П.</strong>
+                <span>група КН-22</span>
+              </span>
+              <span class="rating" role="img" aria-label="Оцінка 5 з 5"
+                >★★★★★</span
+              >
+            </figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>
+              <p>Лабораторні складні, але чітко структуровані та корисні.</p>
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">МС</span>
+              <span class="review-author">
+                <strong>Марія С.</strong>
+                <span>група КН-23</span>
+              </span>
+              <span class="rating" role="img" aria-label="Оцінка 4 з 5"
+                >★★★★☆</span
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 5. Форма зворотного зв'язку -->
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Зворотний зв'язок</h2>
+        <form class="contact-form" action="#" method="post">
+          <div class="form-grid">
+            <div class="field">
+              <label for="f-name">Ім'я та прізвище</label>
+              <input
+                id="f-name"
+                name="name"
+                type="text"
+                required
+                pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ'’ \-]{2,}"
+                title="Лише літери, мінімум 2 символи"
+              />
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" required />
+            </div>
+            <div class="field">
+              <label for="f-group">Група</label>
+              <select id="f-group" name="group" required>
+                <option value="">Оберіть групу</option>
+                <option>КН-21</option>
+                <option>КН-22</option>
+                <option>КН-23</option>
+                <option>КН-24</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-topic">Тема звернення</label>
+              <select id="f-topic" name="topic">
+                <option>Консультація</option>
+                <option>Заявка до гуртка</option>
+                <option>Здача лабораторної</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="f-msg">Повідомлення</label>
+              <textarea
+                id="f-msg"
+                name="message"
+                rows="5"
+                required
+                minlength="10"
+              ></textarea>
+            </div>
+            <div class="field full check">
+              <input id="f-agree" name="agree" type="checkbox" required />
+              <label for="f-agree"
+                >Погоджуюсь на обробку персональних даних</label
+              >
+            </div>
+          </div>
+          <button class="btn" type="submit">Надіслати</button>
+        </form>
+      </section>
     </main>
 
     <aside>
@@ -190,17 +439,7 @@
         PostgreSQL.
       </p>
       <p><strong>Зустрічі:</strong> щоп'ятниці о 16:00 в ауд. 108.</p>
-      <button
-        style="
-          background-color: var(--color-blue);
-          color: white;
-          padding: 10px 15px;
-          border-radius: 4px;
-          margin-top: 10px;
-        "
-      >
-        Подати заявку
-      </button>
+      <a class="btn aside-btn" href="#contact">Подати заявку</a>
     </aside>
 
     <footer>

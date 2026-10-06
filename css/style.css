@@ -5,7 +5,14 @@
 @import url(main.css);
 @import url(aside.css);
 @import url(footer.css);
+@import url(btn.css);
+@import url(stats.css);
+@import url(gallery.css);
+@import url(news.css);
+@import url(reviews.css);
+@import url(form.css);
 
+/* ===== Загальні стилі ===== */
 body {
   max-width: var(--max-width);
   margin-inline: auto;
@@ -31,6 +38,8 @@ p {
   line-height: 1.5;
 }
 
+/* ===== Сітка сторінки (Grid) =====
+   Mobile-first: базові правила діють для екранів до 767px */
 body {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -58,6 +67,7 @@ footer {
   grid-area: footer;
 }
 
+/* ===== Tablet: 768px – 1023px ===== */
 @media (min-width: 768px) {
   body {
     grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
@@ -68,6 +78,7 @@ footer {
   }
 }
 
+/* ===== Desktop: 1024px і більше ===== */
 @media (min-width: 1024px) {
   body {
     grid-template-columns: minmax(0, 25fr) minmax(0, 11fr);
