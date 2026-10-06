@@ -1,3 +1,11 @@
+aside {
+  margin: 0 16px 0 16px;
+}
+
+.btn.aside-btn {
+  margin-bottom: 16px;
+}
+
 .form-grid {
   display: grid;
   grid-template-columns: 1fr;
